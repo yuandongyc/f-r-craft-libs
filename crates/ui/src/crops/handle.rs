@@ -31,4 +31,20 @@ impl<'a> CropHandle<'a> {
             style,
         }
     }
+
+    pub fn id(&self) -> Id {
+        self.id
+    }
+
+    pub fn rect(&self) -> Rect {
+        self.rect
+    }
+
+    pub fn mode(&self) -> CropMode {
+        self.mode
+    }
+
+    pub fn style(&self) -> &CropHandleStyle {
+        self.style
+    }
 }
